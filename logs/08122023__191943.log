@@ -1,0 +1,13 @@
+[ 2023-08-12 19:19:50,660 ] 20 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-08-12 19:19:50,660 ] 31 root - INFO - Exporting collection data as pandas dataframe
+[ 2023-08-12 19:19:50,660 ] 22 root - INFO - Reading data from database: MultiplicationTable and collection: Multiplication
+[ 2023-08-12 19:19:51,301 ] 24 root - INFO - Found columns: Index(['_id', 'A', 'B', 'C'], dtype='object')
+[ 2023-08-12 19:19:51,309 ] 26 root - INFO - Dropping column: _id 
+[ 2023-08-12 19:19:51,325 ] 28 root - INFO - Row and columns in df: (3142, 3)
+[ 2023-08-12 19:19:51,325 ] 37 root - INFO - Save data in feature store
+[ 2023-08-12 19:19:51,325 ] 39 root - INFO - Create feature store folder if not available
+[ 2023-08-12 19:19:51,325 ] 43 root - INFO - Save df to feature store folder
+[ 2023-08-12 19:19:51,357 ] 47 root - INFO - split dataset into train and test set
+[ 2023-08-12 19:19:51,365 ] 51 root - INFO - create dataset directory folder if not available
+[ 2023-08-12 19:19:51,365 ] 56 root - INFO - Saving train df and test df to dataset folder
+[ 2023-08-12 19:19:51,385 ] 67 root - INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08122023__191950\\data_ingestion\\feature_store\\multiplication.csv', train_file_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08122023__191950\\data_ingestion\\dataset\\train.csv', test_file_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08122023__191950\\data_ingestion\\dataset\\test.csv')
