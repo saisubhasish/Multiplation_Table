@@ -35,7 +35,6 @@ list_of_files = [
     ".gitignore",
     ".dockerignore",
     "app.py",
-    "data_dump.py",
     "docker-compose.yaml",
     "Dockerfile",
     "requirements.txt",
