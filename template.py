@@ -10,7 +10,6 @@ project_name = "multiplicationTable"
 list_of_files = [
     ".github/workflows/.gitkeep",
     ".github/workflows/main.yaml",
-    "templates/home.html"
     f"{project_name}/__init__.py",
     f"{project_name}/components/__init__.py",
     f"{project_name}/components/data_ingestion.py",
