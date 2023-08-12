@@ -36,6 +36,7 @@ list_of_files = [
     "app.py",
     "docker-compose.yaml",
     "Dockerfile",
+    "main.py",
     "requirements.txt",
     "setup.py",
     "start.sh",
