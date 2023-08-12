@@ -3,7 +3,7 @@ import pymongo
 import pandas as pd
 from multiplicationTable.config import mongo_client
 
-DATA_FILE_PATH="/config/workspace/multiplicationTable.csv"
+DATA_FILE_PATH="multiplicationTable.csv"
 DATABASE_NAME="MultiplicationTable"
 COLLECTION_NAME="Multiplication"
 
