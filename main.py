@@ -3,7 +3,6 @@ import os, sys
 
 from multiplicationTable.entity import config_entity
 from multiplicationTable.components.data_ingestion import DataIngestion
-
 from multiplicationTable.exception import MultiplicationException
 
 
