@@ -1,0 +1,57 @@
+[ 2023-08-13 23:27:32,402 ] 20 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-08-13 23:27:32,402 ] 31 root - INFO - Exporting collection data as pandas dataframe
+[ 2023-08-13 23:27:32,402 ] 22 root - INFO - Reading data from database: MultiplicationTable and collection: Multiplication
+[ 2023-08-13 23:27:33,313 ] 24 root - INFO - Found columns: Index(['_id', 'A', 'B', 'C'], dtype='object')
+[ 2023-08-13 23:27:33,313 ] 26 root - INFO - Dropping column: _id 
+[ 2023-08-13 23:27:33,329 ] 28 root - INFO - Row and columns in df: (13142, 3)
+[ 2023-08-13 23:27:33,329 ] 37 root - INFO - Save data in feature store
+[ 2023-08-13 23:27:33,329 ] 39 root - INFO - Create feature store folder if not available
+[ 2023-08-13 23:27:33,329 ] 43 root - INFO - Save df to feature store folder
+[ 2023-08-13 23:27:33,375 ] 47 root - INFO - split dataset into train and test set
+[ 2023-08-13 23:27:33,375 ] 51 root - INFO - create dataset directory folder if not available
+[ 2023-08-13 23:27:33,375 ] 56 root - INFO - Saving train df and test df to dataset folder
+[ 2023-08-13 23:27:33,407 ] 67 root - INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08132023__232732\\data_ingestion\\feature_store\\multiplication.csv', train_file_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08132023__232732\\data_ingestion\\dataset\\train.csv', test_file_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08132023__232732\\data_ingestion\\dataset\\test.csv')
+[ 2023-08-13 23:27:33,422 ] 21 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-08-13 23:27:33,422 ] 86 root - INFO - Reading base dataframe
+[ 2023-08-13 23:27:33,438 ] 89 root - INFO - Replace # value in base df
+[ 2023-08-13 23:27:33,438 ] 92 root - INFO - Drop null values colums from base df
+[ 2023-08-13 23:27:33,454 ] 95 root - INFO - Reading train dataframe
+[ 2023-08-13 23:27:33,485 ] 97 root - INFO - Reading test dataframe
+[ 2023-08-13 23:27:33,516 ] 100 root - INFO - Replace # value in train df
+[ 2023-08-13 23:27:33,516 ] 102 root - INFO - Replace # value in test df
+[ 2023-08-13 23:27:33,516 ] 105 root - INFO - Drop null values colums from train df
+[ 2023-08-13 23:27:33,516 ] 107 root - INFO - Drop null values colums from test df
+[ 2023-08-13 23:27:33,516 ] 110 root - INFO - Removing extra characters from base df
+[ 2023-08-13 23:27:33,563 ] 112 root - INFO - Removing extra characters from train df
+[ 2023-08-13 23:27:33,594 ] 114 root - INFO - Removing extra characters from test df
+[ 2023-08-13 23:27:33,594 ] 117 root - INFO - Converting base df columns to float type
+[ 2023-08-13 23:27:33,610 ] 119 root - INFO - Converting train df columns to float type
+[ 2023-08-13 23:27:33,625 ] 121 root - INFO - Converting test df columns to float type
+[ 2023-08-13 23:27:33,625 ] 122 root - INFO -          A    B    C
+0     31.0  NaN  NaN
+1      NaN  NaN  NaN
+2      NaN  NaN  NaN
+3      NaN  NaN  NaN
+4      NaN  NaN  NaN
+...    ...  ...  ...
+2624   NaN  NaN  NaN
+2625   NaN  NaN  NaN
+2626   NaN  NaN  NaN
+2627   NaN  NaN  NaN
+2628   NaN  NaN  NaN
+
+[2619 rows x 3 columns]
+[ 2023-08-13 23:27:33,641 ] 125 root - INFO - Is all required columns present in train df
+[ 2023-08-13 23:27:33,641 ] 127 root - INFO - Is all required columns present in test df
+[ 2023-08-13 23:27:33,641 ] 131 root - INFO - As all column are available in train df hence detecting data drift in train dataframe
+[ 2023-08-13 23:27:33,641 ] 63 root - INFO - Hypothesis A: float64, float64 
+[ 2023-08-13 23:27:33,672 ] 63 root - INFO - Hypothesis B: float64, float64 
+[ 2023-08-13 23:27:33,672 ] 63 root - INFO - Hypothesis C: float64, float64 
+[ 2023-08-13 23:27:33,688 ] 134 root - INFO - As all column are available in test df hence detecting data drift test dataframe
+[ 2023-08-13 23:27:33,688 ] 63 root - INFO - Hypothesis A: float64, float64 
+[ 2023-08-13 23:27:33,688 ] 63 root - INFO - Hypothesis B: float64, float64 
+[ 2023-08-13 23:27:33,688 ] 63 root - INFO - Hypothesis C: float64, float64 
+[ 2023-08-13 23:27:33,688 ] 137 root - INFO - create dataset directory folder if not available for validated train file and test file
+[ 2023-08-13 23:27:33,704 ] 142 root - INFO - Saving validated train df and test df to dataset folder
+[ 2023-08-13 23:27:33,750 ] 148 root - INFO - Writing report in yaml file
+[ 2023-08-13 23:27:33,750 ] 154 root - INFO - Data validation artifact: DataValidationArtifact(report_file_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08132023__232732\\data_validation\\report.yaml', train_file_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08132023__232732\\data_validation\\dataset\\train.csv', test_file_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08132023__232732\\data_validation\\dataset\\test.csv')

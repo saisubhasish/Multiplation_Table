@@ -33,7 +33,12 @@ def get_collection_as_dataframe(database_name:str,collection_name:str)->pd.DataF
 
 def write_yaml_file(file_path,data:dict):
     """
-    Creating yaml report for validation status of each column
+    Description: Creating yaml report for validation status of each column
+    =========================================================
+    Params:
+    file_path: file path
+    data: data to write in report
+    =========================================================
     """
     try:
         file_dir = os.path.dirname(file_path)
@@ -43,18 +48,34 @@ def write_yaml_file(file_path,data:dict):
     except Exception as e:
         raise MultiplicationException(e, sys)
 
-def convert_columns_float(df:pd.DataFrame,exclude_columns:list)->pd.DataFrame:
+def convert_columns_float(df:pd.DataFrame)->pd.DataFrame:
     """
-    Converting column to float type except target column
+    Description: Converting column to float type 
+    =========================================================
+    Params:
+    df: data frame
+    =========================================================
+    return Pandas dataframe 
     """
     try:
-        obj_cols = df.columns[df.dtypes.eq('O')]
-        obj_cols = df[obj_cols]
-        for column in obj_cols.columns:
-            if column not in exclude_columns:
-                #df[column]=df[column].astype('float')
-                #df[column] = df[column].apply(pd.to_numeric, errors='coerce') 
-                df[column] = pd.to_numeric(column, errors='coerce') # ignore errors
+        for column in df.columns:
+            df[column] = df[column].astype('float')
+        return df
+    except Exception as e:
+        raise MultiplicationException(e, sys)
+    
+def remove_extra_characters_from_column(df:pd.DataFrame)->pd.DataFrame:
+    """
+    Description: Removing extra characters from column
+    =========================================================
+    Params:
+    df: data frame
+    =========================================================
+    return Pandas dataframe 
+    """
+    try:
+        for column in df.columns:
+            df[column] = df[column].map(lambda x: str(x).strip().rstrip('a').rstrip('b').rstrip('c').rstrip('d').rstrip('e'))
         return df
     except Exception as e:
         raise MultiplicationException(e, sys)

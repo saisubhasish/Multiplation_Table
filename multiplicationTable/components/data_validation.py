@@ -107,6 +107,21 @@ class DataValidation:
             logging.info("Drop null values colums from test df")
             test_df.dropna(inplace=True)
 
+            logging.info("Removing extra characters from base df")
+            base_df = utils.remove_extra_characters_from_column(base_df)
+            logging.info("Removing extra characters from train df")
+            train_df = utils.remove_extra_characters_from_column(train_df)
+            logging.info("Removing extra characters from test df")
+            test_df = utils.remove_extra_characters_from_column(test_df)
+
+            logging.info("Converting base df columns to float type")
+            base_df = utils.convert_columns_float(df=base_df)
+            logging.info("Converting train df columns to float type")
+            train_df = utils.convert_columns_float(df=train_df)
+            logging.info("Converting test df columns to float type")
+            logging.info(test_df[test_df=='31.0'])
+            test_df = utils.convert_columns_float(df=test_df)
+
             logging.info("Is all required columns present in train df")
             train_df_columns_status = self.is_required_columns_exists(base_df=base_df, current_df=train_df,report_key_name="missing_columns_within_train_dataset")
             logging.info("Is all required columns present in test df")

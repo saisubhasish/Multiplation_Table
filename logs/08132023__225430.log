@@ -1,0 +1,33 @@
+[ 2023-08-13 22:54:37,956 ] 20 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-08-13 22:54:37,956 ] 31 root - INFO - Exporting collection data as pandas dataframe
+[ 2023-08-13 22:54:37,956 ] 22 root - INFO - Reading data from database: MultiplicationTable and collection: Multiplication
+[ 2023-08-13 22:54:38,707 ] 24 root - INFO - Found columns: Index(['_id', 'A', 'B', 'C'], dtype='object')
+[ 2023-08-13 22:54:38,715 ] 26 root - INFO - Dropping column: _id 
+[ 2023-08-13 22:54:38,723 ] 28 root - INFO - Row and columns in df: (13142, 3)
+[ 2023-08-13 22:54:38,723 ] 37 root - INFO - Save data in feature store
+[ 2023-08-13 22:54:38,723 ] 39 root - INFO - Create feature store folder if not available
+[ 2023-08-13 22:54:38,735 ] 43 root - INFO - Save df to feature store folder
+[ 2023-08-13 22:54:38,775 ] 47 root - INFO - split dataset into train and test set
+[ 2023-08-13 22:54:38,783 ] 51 root - INFO - create dataset directory folder if not available
+[ 2023-08-13 22:54:38,791 ] 56 root - INFO - Saving train df and test df to dataset folder
+[ 2023-08-13 22:54:38,833 ] 67 root - INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08132023__225437\\data_ingestion\\feature_store\\multiplication.csv', train_file_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08132023__225437\\data_ingestion\\dataset\\train.csv', test_file_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08132023__225437\\data_ingestion\\dataset\\test.csv')
+[ 2023-08-13 22:54:38,841 ] 21 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-08-13 22:54:38,841 ] 86 root - INFO - Reading base dataframe
+[ 2023-08-13 22:54:38,857 ] 89 root - INFO - Replace # value in base df
+[ 2023-08-13 22:54:38,865 ] 92 root - INFO - Drop null values colums from base df
+[ 2023-08-13 22:54:38,873 ] 95 root - INFO - Reading train dataframe
+[ 2023-08-13 22:54:38,900 ] 97 root - INFO - Reading test dataframe
+[ 2023-08-13 22:54:38,916 ] 100 root - INFO - Replace # value in train df
+[ 2023-08-13 22:54:38,924 ] 102 root - INFO - Replace # value in test df
+[ 2023-08-13 22:54:38,924 ] 105 root - INFO - Drop null values colums from train df
+[ 2023-08-13 22:54:38,924 ] 107 root - INFO - Drop null values colums from test df
+[ 2023-08-13 22:54:38,933 ] 110 root - INFO - Removing extra characters from base df
+[ 2023-08-13 22:54:38,983 ] 112 root - INFO - Removing extra characters from train df
+[ 2023-08-13 22:54:39,015 ] 114 root - INFO - Removing extra characters from test df
+[ 2023-08-13 22:54:39,023 ] 117 root - INFO - Converting base df columns to int type
+[ 2023-08-13 22:54:39,033 ] 119 root - INFO - Converting train df columns to int type
+[ 2023-08-13 22:54:39,041 ] 121 root - INFO - Converting test df columns to int type
+[ 2023-08-13 22:54:39,041 ] 122 root - INFO - Index([   0,    1,    2,    3,    4,    5,    6,    7,    8,    9,
+       ...
+       2619, 2620, 2621, 2622, 2623, 2624, 2625, 2626, 2627, 2628],
+      dtype='int64', length=2619)
