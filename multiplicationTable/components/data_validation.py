@@ -119,7 +119,6 @@ class DataValidation:
             logging.info("Converting train df columns to float type")
             train_df = utils.convert_columns_float(df=train_df)
             logging.info("Converting test df columns to float type")
-            logging.info(test_df[test_df=='31.0'])
             test_df = utils.convert_columns_float(df=test_df)
 
             logging.info("Is all required columns present in train df")

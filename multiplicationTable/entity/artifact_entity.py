@@ -14,10 +14,9 @@ class DataValidationArtifact:
 
 @dataclass
 class DataTransformationArtifact:
-    knn_imputer_object_path:str
     transformed_train_path:str
     transformed_test_path:str
-    target_encoder_path:str
+    transform_object_path:str
 
 @dataclass
 class ModelTrainerArtifact:
