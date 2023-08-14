@@ -1,0 +1,64 @@
+[ 2023-08-14 19:01:27,927 ] 20 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-08-14 19:01:27,927 ] 31 root - INFO - Exporting collection data as pandas dataframe
+[ 2023-08-14 19:01:27,927 ] 22 root - INFO - Reading data from database: MultiplicationTable and collection: Multiplication
+[ 2023-08-14 19:01:29,795 ] 24 root - INFO - Found columns: Index(['_id', 'A', 'B', 'C'], dtype='object')
+[ 2023-08-14 19:01:29,795 ] 26 root - INFO - Dropping column: _id 
+[ 2023-08-14 19:01:29,795 ] 28 root - INFO - Row and columns in df: (13142, 3)
+[ 2023-08-14 19:01:29,795 ] 37 root - INFO - Save data in feature store
+[ 2023-08-14 19:01:29,795 ] 39 root - INFO - Create feature store folder if not available
+[ 2023-08-14 19:01:29,810 ] 43 root - INFO - Save df to feature store folder
+[ 2023-08-14 19:01:29,873 ] 47 root - INFO - split dataset into train and test set
+[ 2023-08-14 19:01:29,889 ] 51 root - INFO - create dataset directory folder if not available
+[ 2023-08-14 19:01:29,889 ] 56 root - INFO - Saving train df and test df to dataset folder
+[ 2023-08-14 19:01:29,928 ] 67 root - INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08142023__190127\\data_ingestion\\feature_store\\multiplication.csv', train_file_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08142023__190127\\data_ingestion\\dataset\\train.csv', test_file_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08142023__190127\\data_ingestion\\dataset\\test.csv')
+[ 2023-08-14 19:01:29,936 ] 21 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-08-14 19:01:29,936 ] 86 root - INFO - Reading base dataframe
+[ 2023-08-14 19:01:29,949 ] 89 root - INFO - Replace # value in base df
+[ 2023-08-14 19:01:29,949 ] 92 root - INFO - Drop null values colums from base df
+[ 2023-08-14 19:01:29,965 ] 95 root - INFO - Reading train dataframe
+[ 2023-08-14 19:01:29,996 ] 97 root - INFO - Reading test dataframe
+[ 2023-08-14 19:01:29,996 ] 100 root - INFO - Replace # value in train df
+[ 2023-08-14 19:01:30,012 ] 102 root - INFO - Replace # value in test df
+[ 2023-08-14 19:01:30,012 ] 105 root - INFO - Drop null values colums from train df
+[ 2023-08-14 19:01:30,012 ] 107 root - INFO - Drop null values colums from test df
+[ 2023-08-14 19:01:30,012 ] 110 root - INFO - Removing extra characters from base df
+[ 2023-08-14 19:01:30,027 ] 112 root - INFO - Removing extra characters from train df
+[ 2023-08-14 19:01:30,058 ] 114 root - INFO - Removing extra characters from test df
+[ 2023-08-14 19:01:30,058 ] 117 root - INFO - Converting base df columns to float type
+[ 2023-08-14 19:01:30,074 ] 119 root - INFO - Converting train df columns to float type
+[ 2023-08-14 19:01:30,074 ] 121 root - INFO - Converting test df columns to float type
+[ 2023-08-14 19:01:30,074 ] 124 root - INFO - Is all required columns present in train df
+[ 2023-08-14 19:01:30,074 ] 126 root - INFO - Is all required columns present in test df
+[ 2023-08-14 19:01:30,074 ] 130 root - INFO - As all column are available in train df hence detecting data drift in train dataframe
+[ 2023-08-14 19:01:30,074 ] 63 root - INFO - Hypothesis A: float64, float64 
+[ 2023-08-14 19:01:30,090 ] 63 root - INFO - Hypothesis B: float64, float64 
+[ 2023-08-14 19:01:30,090 ] 63 root - INFO - Hypothesis C: float64, float64 
+[ 2023-08-14 19:01:30,105 ] 133 root - INFO - As all column are available in test df hence detecting data drift test dataframe
+[ 2023-08-14 19:01:30,105 ] 63 root - INFO - Hypothesis A: float64, float64 
+[ 2023-08-14 19:01:30,105 ] 63 root - INFO - Hypothesis B: float64, float64 
+[ 2023-08-14 19:01:30,105 ] 63 root - INFO - Hypothesis C: float64, float64 
+[ 2023-08-14 19:01:30,105 ] 136 root - INFO - create dataset directory folder if not available for validated train file and test file
+[ 2023-08-14 19:01:30,105 ] 141 root - INFO - Saving validated train df and test df to dataset folder
+[ 2023-08-14 19:01:30,152 ] 147 root - INFO - Writing report in yaml file
+[ 2023-08-14 19:01:30,152 ] 153 root - INFO - Data validation artifact: DataValidationArtifact(report_file_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08142023__190127\\data_validation\\report.yaml', train_file_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08142023__190127\\data_validation\\dataset\\train.csv', test_file_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08142023__190127\\data_validation\\dataset\\test.csv')
+[ 2023-08-14 19:01:30,152 ] 19 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-08-14 19:01:30,190 ] 89 root - INFO - Entered the save_object method of utils
+[ 2023-08-14 19:01:30,198 ] 93 root - INFO - Exited the save_object method of utils
+[ 2023-08-14 19:01:30,198 ] 75 root - INFO - Data transformation object DataTransformationArtifact(transformed_train_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08142023__190127\\data_transformation\\transformed\\train.npz', transformed_test_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08142023__190127\\data_transformation\\transformed\\test.npz', transform_object_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08142023__190127\\data_transformation\\target_encoder\\transformer.pkl')
+[ 2023-08-14 19:01:30,198 ] 18 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Model Trainer <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-08-14 19:01:30,198 ] 79 root - INFO - Loading train and test array.
+[ 2023-08-14 19:01:30,222 ] 83 root - INFO - Splitting input and target feature from both train and test arr.
+[ 2023-08-14 19:01:30,222 ] 92 root - INFO - Train the model
+[ 2023-08-14 19:01:30,732 ] 96 root - INFO - Calculating r2 train score
+[ 2023-08-14 19:01:30,763 ] 101 root - INFO - Calculating r2 test score
+[ 2023-08-14 19:01:30,763 ] 105 root - INFO - train score:0.9604279580477975 and tests score 0.978039576950565
+[ 2023-08-14 19:01:30,763 ] 107 root - INFO - Checking if our model is underfitting or not
+[ 2023-08-14 19:01:30,763 ] 112 root - INFO - Checking if our model is overfiiting or not
+[ 2023-08-14 19:01:30,763 ] 119 root - INFO - Saving model object
+[ 2023-08-14 19:01:30,763 ] 89 root - INFO - Entered the save_object method of utils
+[ 2023-08-14 19:01:30,794 ] 93 root - INFO - Exited the save_object method of utils
+[ 2023-08-14 19:01:30,794 ] 123 root - INFO - Prepare the artifact
+[ 2023-08-14 19:01:30,794 ] 126 root - INFO - Model trainer artifact: ModelTrainerArtifact(model_path='D:\\FSDS-iNeuron\\10.Projects-DS\\Multiplation_Table\\artifact\\08142023__190127\\model_trainer\\model\\model.pkl', r2_train_score=0.9604279580477975, r2_test_score=0.978039576950565)
+[ 2023-08-14 19:01:30,794 ] 21 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Model Evaluation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2023-08-14 19:01:30,794 ] 35 root - INFO - If saved model folder has model the we will compare which model is best, trained or the model from saved model folder
+[ 2023-08-14 19:01:30,794 ] 41 root - INFO - Model evaluation artifact: ModelEvaluationArtifact(is_model_accepted=True, improved_accuracy=None)

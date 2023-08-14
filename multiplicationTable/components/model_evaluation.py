@@ -1,5 +1,5 @@
 from multiplicationTable.entity import config_entity, artifact_entity
-from multiplicationTable.exception import SensorException
+from multiplicationTable.exception import MultiplicationException
 from multiplicationTable.predictor import ModelResolver
 from multiplicationTable.config import TARGET_COLUMN
 from multiplicationTable.utils import load_object
@@ -25,7 +25,7 @@ class ModelEvaluation:
             self.model_trainer_artifact=model_trainer_artifact
             self.model_resolver = ModelResolver()
         except Exception as e:
-            raise SensorException(e,sys)
+            raise MultiplicationException(e,sys)
 
     def initiate_model_evaluation(self)->artifact_entity.ModelEvaluationArtifact:
         try:
@@ -91,4 +91,4 @@ class ModelEvaluation:
             logging.info(f"Model eval artifact: {model_eval_artifact}")
             return model_eval_artifact
         except Exception as e:
-            raise SensorException(e,sys)
+            raise MultiplicationException(e,sys)
