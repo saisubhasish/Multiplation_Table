@@ -7,8 +7,6 @@
 ![Screenshot (24)](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/408f448d-8ed9-4990-8acd-8bda23131947)
 ![image](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/ed1876b7-ff81-4191-a933-899077b1c547)
 
-
-
 # AWS-CICD-Deployment-with-Github-Actions
 
 ## 1. Login to AWS console.
