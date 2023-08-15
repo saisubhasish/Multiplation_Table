@@ -75,3 +75,4 @@ AWS_REGION = ap-east-1
 AWS_ECR_LOGIN_URI = 832383300965.dkr.ecr.ap-south-1.amazonaws.com
 
 ECR_REPOSITORY_NAME = mlproj
+
