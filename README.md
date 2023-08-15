@@ -1,3 +1,6 @@
+# Problem statement
+A tool for multiplication table is required because it allows for quick and accurate multiplication calculations. It eliminates the need for manual calculations, which can be time-consuming and prone to errors. A calculator can handle large numbers and complicated calculations with ease, making it an essential tool for students, professionals, and anyone who needs to perform multiplication frequently. Additionally, a calculator provides instant results, allowing for efficient problem-solving and decision-making. Overall, a multiplication calculator simplifies the process and saves valuable time, making it an indispensable tool in various fields.  
+
 # RegressionModel_MultiplicationTable
 ![image](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/9e58da18-5b10-4ee0-9c67-68ce9d236937)
 
