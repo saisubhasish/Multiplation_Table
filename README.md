@@ -1,6 +1,16 @@
 # RegressionModel_MultiplicationTable
 ![image](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/9e58da18-5b10-4ee0-9c67-68ce9d236937)
 
+# Model Archtecture
+![image](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/c3ecfd88-fb99-4347-8c5f-0dfcb2d65692)
+
+# Deployment Process
+![image](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/dd86bad3-3611-4888-ab81-def81128a985)
+
+# Model workflow
+![image](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/2759f2ae-69b2-4dca-a2f9-24cb81d967e8)
+
+
 # Model UI
 ![image](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/cba489fd-6ebf-42fc-ab87-745d83460320)
 ![image](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/c1a890e6-3ea7-40ff-aa3f-3a0e30b046e3)
