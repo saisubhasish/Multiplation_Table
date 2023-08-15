@@ -1,11 +1,11 @@
 # RegressionModel_MultiplicationTable
-![image](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/471dd4be-52b5-4922-8acc-efc366542191)
+![image](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/9e58da18-5b10-4ee0-9c67-68ce9d236937)
 
 # Model UI
-![Screenshot (22)](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/c3b27abc-2d82-4fe8-9d73-c401ede66f8d)
-![Screenshot (23)](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/1803f0a3-0b53-4362-9012-e1ffd9ebf9ba)
-![Screenshot (24)](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/408f448d-8ed9-4990-8acd-8bda23131947)
-![image](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/ed1876b7-ff81-4191-a933-899077b1c547)
+![image](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/cba489fd-6ebf-42fc-ab87-745d83460320)
+![image](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/c1a890e6-3ea7-40ff-aa3f-3a0e30b046e3)
+![image](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/71ff918f-a3e0-4dcd-bc6b-9944f60ababb)
+![image](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/c1d7af28-685b-4ff2-90a9-ea6989d20847)
 
 # AWS-CICD-Deployment-with-Github-Actions
 
