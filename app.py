@@ -1,4 +1,4 @@
-import sys
+import os, sys
 from flask import Flask, request, jsonify, url_for, render_template
 from flask_cors import CORS, cross_origin
 import numpy as np
@@ -28,6 +28,11 @@ def home():
     
     except Exception as e:
         raise MultiplicationException(error_message=e, error_detail=sys)
+    
+@app.route('/train',methods=['GET'])  # route to train the pipeline
+def training():
+    os.system("python main.py")
+    return "Training Successful!" 
 
 @app.route('/predict_api', methods=['POST'])
 @cross_origin()
