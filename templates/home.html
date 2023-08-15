@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Multiplication Table</title>
+</head>
+
+<body style="background-color:rgb(71, 82, 207)";>
+ <div class="login">
+	<h1 style="text-align: center; background-color:rgb(238, 11, 11);" >Multiplication Table</h1>
+  <h3 style="text-align: left; background-color:rgb(240, 240, 240);" >Please enter the numbers</h3>
+
+     <!-- Main Input For Receiving Query to our ML -->
+      <table>
+        <form action="{{ url_for('predict_api')}}"method="post">
+            <tr>
+                <td>
+                    <label style="font-weight: bold;">
+                    A:
+                    </label>
+                </td>
+                <td><input type="text" name="a" placeholder="a" required="required" /><br>
+                </td>
+            </tr>
+
+            <tr>
+              <td>
+                  <label style="font-weight: bold;">
+                    B:
+                  </label>
+              </td>
+              <td><input type="text" name="b" placeholder="b" required="required" /><br>
+              </td>
+            </tr>
+      </table>
+      
+      <br><br>     
+      
+        <button  style="font-weight: bold;" type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+  
+ </div>
+ {{output_text}}
+
+ <br>
+ <br>
+ 
+
+</body>
+</html>
