@@ -6,6 +6,9 @@ A tool for multiplication table is required because it allows for quick and accu
 
 HLD Document: https://docs.google.com/document/d/151DYibsWqod1YxlJ_7fdzIWa-O9YnBTN/edit?usp=sharing&ouid=114030088195074570088&rtpof=true&sd=true 
 
+# Training Pipeline 
+![training_pipeline_flow drawio](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/91138364-737b-435b-ba38-a624da713b38)
+
 # Model Archtecture
 ![image](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/c3ecfd88-fb99-4347-8c5f-0dfcb2d65692)
 
