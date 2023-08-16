@@ -29,7 +29,7 @@ Detailed Project Report: https://docs.google.com/presentation/d/1JBIEzk68DPxG8cx
 ![image](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/71ff918f-a3e0-4dcd-bc6b-9944f60ababb)
 ![image](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/c1d7af28-685b-4ff2-90a9-ea6989d20847)
 
-# AWS-CICD-Deployment-with-Github-Actions
+# Docker-AWS-CICD-Deployment-with-Github-Actions
 
 ## 1. Login to AWS console.
 ## 2. Create IAM user for deployment
