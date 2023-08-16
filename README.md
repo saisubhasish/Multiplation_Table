@@ -4,7 +4,11 @@ A tool for multiplication table is required because it allows for quick and accu
 # RegressionModel_MultiplicationTable
 ![image](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/9e58da18-5b10-4ee0-9c67-68ce9d236937)
 
-HLD Document: https://docs.google.com/document/d/151DYibsWqod1YxlJ_7fdzIWa-O9YnBTN/edit?usp=sharing&ouid=114030088195074570088&rtpof=true&sd=true 
+HLD Document: https://docs.google.com/document/d/1DYU1dZvAQWsaEaGmFT4EwJTyj8mxaNzT/edit?usp=sharing&ouid=114030088195074570088&rtpof=true&sd=true
+LLD Document: https://docs.google.com/document/d/1KxthN0Wu62ROmk95ZhCGK95uoU6hH386/edit?usp=sharing&ouid=114030088195074570088&rtpof=true&sd=true
+Architecture Document: https://docs.google.com/document/d/16XKp6Wwkpx3obQmntNZaiW7lQMef9ieC/edit?usp=sharing&ouid=114030088195074570088&rtpof=true&sd=true
+Wireframe Document: https://docs.google.com/document/d/1KlXA6tjQoQoCCrR7xMY6Cv5KtI9jgHpR/edit?usp=sharing&ouid=114030088195074570088&rtpof=true&sd=true
+Detailed Project Report: https://docs.google.com/presentation/d/1JBIEzk68DPxG8cx33JkJeSk0OjbROCRE/edit?usp=sharing&ouid=114030088195074570088&rtpof=true&sd=true
 
 # Training Pipeline 
 ![training_pipeline_flow drawio](https://github.com/saisubhasish/Multiplation_Table/assets/102937478/91138364-737b-435b-ba38-a624da713b38)
